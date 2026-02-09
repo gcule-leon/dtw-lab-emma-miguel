@@ -1,18 +1,48 @@
-## Pasos que hemos seguido para la realización del lab
+# Lab Workflow – Steps Followed
 
-1. Clonado del repo de los profesores
-2. Clonado del repo que hemos configurado manualmente
-3. Movimiento archivos '/materials' del primer repo a nuestro repo
-4. Hemos pusheado el primer commit con los cambios, al estar vacío previamente el repo, en este caso nos va a dejar pushearlo todo a main.
-5. A continuación hemos creado el enviroment de Python con el comando: uv sync --frozen
-6. Hemos creado una feature nueva llamada clean_data y nos hemos movido a ella
-7. Hemos cambiado el codigo en la nueva rama y tras commitearlo lo hemos pusheado con el comando: git push --set-upstream origin feature/clean_data
-8. Hemos ejecutado lo anterior con uv run python main.py y hemos obtenido el siguiente resultado: The mean value for the charge left percentage is 33.200312292697866
-9. Hemos hecho un cambio sobre main para poder acceder a la función y tras ejecutarla el resultado ha cambiado a: The mean value for the charge left percentage is 33.084664003107484, además, observamos que se han eliminado las outliers en los distintos gráficos generados.
-10. A continuación he subido los cambios mediante la interfaz GUI del Github en VSC.
-11. Hemos intentado hacer la pull request pero como el otro día en clase, nos ha dado un fallo con los permisos y hemos tenido que cambiar los settings para poder mergearlo todo.
-12. Una vez aprobado el merge request, hemos vuelto a VSC, hemos fetcheado todas las ramas, nos hemos movido a la main, y hemos pulleado todos sus cambios.
-13. Para comprbar los conflictos, hemos creado una nueva rama y tras hacer un cambio en main.py hemos subido todo y lo hemos mergeado en github mdiante una pull request, sin embargo no hemos descargado esos cambios en nuestro local, queremos observar conflictos y para ello tenemos que tener una "version antigua en nuestro local".
-14. A continuación, hemos creado en nuestro local una nueva rama con un nuevo cambio para comprobar dicho conflicto. git checkout -b feature/conflict-uppercase
-15. Hemos cambiado exactamente la misma palabra en esta nueva rama (recordando que la hemos sacado del main sin el merge actualizado).
-13.
+## 1. Repository Preparation
+1. Cloned the professors' repository.
+2. Cloned our own repository, previously configured manually.
+3. Copied the `/materials` directory from the professors' repository into our repository.
+4. Performed the first commit and pushed it to `main`. Since the repository was initially empty, pushing directly to `main` was allowed.
+
+---
+
+## 2. Python Environment Setup
+5. Created the Python environment and synchronized project dependencies using the appropriate environment setup command.
+
+---
+
+## 3. Feature Development (Data Cleaning)
+6. Created a new feature branch named `feature/clean_data` and switched to it.
+7. Modified the code in this branch and pushed the changes to the remote repository.
+8. Executed the application and obtained the following result:
+
+The mean value for the charge left percentage is 33.200312292697866
+
+---
+
+## 4. Updating Main Branch
+9. Applied a modification on the `main` branch to correctly access the cleaning function. After execution, the result changed to:
+
+The mean value for the charge left percentage is 33.084664003107484
+
+
+Additionally, outliers were successfully removed from the generated graphs.
+
+10. Changes were pushed using the GitHub interface integrated in VS Code.
+
+---
+
+## 5. Pull Request and Merge Process
+11. While creating the Pull Request, permission issues appeared, similar to what happened previously in class. Repository settings were updated to allow merging.
+12. After approval and merge completion, all branches were fetched locally, and the updated changes from `main` were downloaded.
+
+---
+
+## 6. Conflict Simulation
+13. To simulate merge conflicts, a new branch was created and changes were made in `main.py`. These changes were merged on GitHub through a Pull Request, but the updates were intentionally not downloaded locally so that the local repository remained outdated.
+
+14. A new local branch was then created from the outdated version of `main`.
+15. In this branch, exactly the same word was modified as in the previously merged remote change, ensuring a conflict scenario.
+16. When creating a new Pull Request, GitHub detected the conflict. After resolving it and completing the merge, branches were updated locally and the commit history confirmed that merges and history matched the reference repository provided by the professors.
