@@ -56,3 +56,5 @@ Additionally, outliers were successfully removed from the generated graphs.
 The final execution produced:
 
 The mode value for the charge left PERCENTAGE is 32.31
+
+## 8. Final Functional Change Test
