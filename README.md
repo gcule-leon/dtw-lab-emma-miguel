@@ -12,4 +12,7 @@
 10. A continuación he subido los cambios mediante la interfaz GUI del Github en VSC.
 11. Hemos intentado hacer la pull request pero como el otro día en clase, nos ha dado un fallo con los permisos y hemos tenido que cambiar los settings para poder mergearlo todo.
 12. Una vez aprobado el merge request, hemos vuelto a VSC, hemos fetcheado todas las ramas, nos hemos movido a la main, y hemos pulleado todos sus cambios.
+13. Para comprbar los conflictos, hemos creado una nueva rama y tras hacer un cambio en main.py hemos subido todo y lo hemos mergeado en github mdiante una pull request, sin embargo no hemos descargado esos cambios en nuestro local, queremos observar conflictos y para ello tenemos que tener una "version antigua en nuestro local".
+14. A continuación, hemos creado en nuestro local una nueva rama con un nuevo cambio para comprobar dicho conflicto. git checkout -b feature/conflict-uppercase
+15. Hemos cambiado exactamente la misma palabra en esta nueva rama (recordando que la hemos sacado del main sin el merge actualizado).
 13.
