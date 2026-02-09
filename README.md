@@ -9,4 +9,9 @@
 7. Hemos cambiado el codigo en la nueva rama y tras commitearlo lo hemos pusheado con el comando: git push --set-upstream origin feature/clean_data
 8. Hemos ejecutado lo anterior con uv run python main.py y hemos obtenido el siguiente resultado: The mean value for the charge left percentage is 33.200312292697866
 9. Hemos hecho un cambio sobre main para poder acceder a la función y tras ejecutarla el resultado ha cambiado a: The mean value for the charge left percentage is 33.084664003107484, además, observamos que se han eliminado las outliers en los distintos gráficos generados.
-10. 
+10. A continuación he subido los cambios mediante la interfaz GUI del Github en VSC.
+11. Hemos intentado hacer la pull request pero como el otro día en clase, nos ha dado un fallo con los permisos y hemos tenido que cambiar los settings para poder mergearlo todo.
+12. Una vez aprobado el merge request, hemos vuelto a VSC, hemos fetcheado todas las ramas, nos hemos movido a la main, y hemos pulleado todos sus cambios.
+13. Para comprbar los conflictos, hemos creado una nueva rama y tras hacer un cambio en main.py hemos subido todo y lo hemos mergeado en github mdiante una pull request, sin embargo no hemos descargado esos cambios en nuestro local, queremos observar conflictos y para ello tenemos que tener una "version antigua en nuestro local".
+14. A continuación, hemos creado en nuestro local una nueva rama con un nuevo cambio para comprobar dicho conflicto. git checkout -b feature/conflict-uppercase
+15. Hemos cambiado exactamente la misma palabra en esta nueva rama (recordando que la hemos sacado del main sin el merge actualizado).
