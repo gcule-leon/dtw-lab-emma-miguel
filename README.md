@@ -46,3 +46,13 @@ Additionally, outliers were successfully removed from the generated graphs.
 14. A new local branch was then created from the outdated version of `main`.
 15. In this branch, exactly the same word was modified as in the previously merged remote change, ensuring a conflict scenario.
 16. When creating a new Pull Request, GitHub detected the conflict. After resolving it and completing the merge, branches were updated locally and the commit history confirmed that merges and history matched the reference repository provided by the professors.
+
+
+---
+
+## 7. Final Functional Improvement
+17. As a final step, a functional improvement was introduced: instead of computing the mean value, the application was modified to compute the median value of the charge percentage.
+
+The final execution produced:
+
+The mode value for the charge left PERCENTAGE is 32.31
