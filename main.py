@@ -6,3 +6,5 @@ if __name__=='__main__':
  df = clean_data(df)
  visualize_data(df)
  print(f'The mode value for the charge left PERCENTAGE is {calculate_statistic('mode',df['Charge_Left_Percentage'])}')
+ 
+ # cambio para probar pr-openning.yaml
